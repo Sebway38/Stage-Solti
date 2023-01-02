@@ -1,0 +1,46 @@
+
+
+
+/* permet de fixer les div */
+.tooltip-container {
+    position: relative;
+    display: flex;
+    place-content: center;
+    top :100px;
+}
+
+/* le style du text de display */
+p#tooltip-text {
+  background-color: #ff0000; 
+  color: #FFFFFF; 
+  border: 1px solid black; 
+  padding: 15px;
+  font-size: 20px;
+  top : 10px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+   
+    
+}
+
+/* avant l'affichage du text (pop-up) */
+p#tooltip-text:before {
+  /*content: ""; */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-top: 8px solid #000000;
+  
+}
+
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
